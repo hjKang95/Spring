@@ -12,9 +12,8 @@ import java.util.Optional;
 @Service
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+ //   private final MemberRepository memberRepository = new MemoryMemberRepository();
 
-    /*
     private final MemberRepository memberRepository;
 
      @Autowired
@@ -25,7 +24,6 @@ public class MemberService {
         // 결과적으로 다른 Member 객체가 생성되는 것을 방지하기 위함
         // Dependency Injection
     }
-    */
 
     /**
      * 회원 가입
