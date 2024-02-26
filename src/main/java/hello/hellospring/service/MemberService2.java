@@ -2,27 +2,19 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
-public class MemberService {
+public class MemberService2 {
 
- //   private final MemberRepository memberRepository = new MemoryMemberRepository();
-
+ //   private final MemberRepository2 memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
-     @Autowired
-    public MemberService(MemberRepository memberRepository) {
+    public MemberService2(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
-        // 테스트 시 생성된 memberRepository 객체가
-        // MemberService 에서 생성하는 MemoryMemberRepository 객체와 달라
-        // 결과적으로 다른 Member 객체가 생성되는 것을 방지하기 위함
-        // Dependency Injection
     }
 
     /**
